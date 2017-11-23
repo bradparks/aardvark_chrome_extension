@@ -16,9 +16,9 @@ var aardvark = {
   doStart: function()
   {
     console.log('starting...');
-    console.log('this:' + this);
-      this.showHelpTip(0);
-      this.start();
+
+    this.showHelpTip(0);
+    this.start();
   },
 
   //------------------------------------------------
@@ -37,5 +37,6 @@ var aardvark = {
 
 aardvark.window = window;
 aardvark.doc = window.document;
-
-
+top.aardvark = aardvark;
+window.aardvark = aardvark;
+window.document.aardvark = aardvark;

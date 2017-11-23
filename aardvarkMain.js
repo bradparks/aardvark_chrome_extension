@@ -381,15 +381,14 @@ aardvark.mouseMoved = false;
 keyDown : function (evt) {
 if (!evt)
   evt = aardvark.window.event;
-var c;
 
-if (evt.ctrlKey || evt.metaKey || evt.altKey)
+console.log(evt);
+if (! evt.ctrlKey)
   return true;
 
-var keyCode = evt.keyCode ? evt.keyCode :
-      evt.charCode ? evt.charCode :
-      evt.which ? evt.which : 0;
-c = String.fromCharCode(keyCode).toLowerCase();
+var c = (evt.key + "").toLowerCase();
+console.log(c);
+
 var command = aardvark.getByKey(c);
 
 if (command) {
