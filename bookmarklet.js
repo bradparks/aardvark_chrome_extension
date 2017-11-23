@@ -5,7 +5,9 @@ var aardvark = {
 
 isBookmarklet: true,
 oldresourcePrefix: "http://karmatics.com/aardvark/",
-resourcePrefix: "https://dl.dropbox.com/u/274922/aardvark/",
+resourcePrefixOld2: "https://dl.dropbox.com/u/274922/aardvark/",
+resourcePrefix: "https://cdn.rawgit.com/bradparks/aardvark_chrome_extension/20013336/",
+
 srcFiles: [
   'aardvarkStrings.js',
   'aardvarkUtils.js',

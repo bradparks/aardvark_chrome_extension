@@ -1,0 +1,23 @@
+{
+  "name": "Aardvark Chrome Extension, startup",
+  "description": "Aardvark Chrome Extension, startup",
+  "version": "1.1",
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "permissions": [
+    "tabs", "http://*/*", "https://*/*"
+  ],
+  "manifest_version": 2,
+  "icons":
+  {
+      "128": "icon128.png",
+      "16": "icon16.png",
+      "48": "icon48.png"
+  },
+  "browser_action": {
+    "name": "Aardvark",
+    "icons": ["icon48.png"],
+    "default_icon": "icon48.png"
+  }
+}
