@@ -1,6 +1,6 @@
 {
-  "name": "Aardvark Chrome Extension, startup",
-  "description": "Aardvark Chrome Extension, startup",
+  "name": "Aardvark Chrome Extension",
+  "description": "Aardvark Chrome Extension",
   "version": "1.1",
   "background": {
     "scripts": ["background.js"]
